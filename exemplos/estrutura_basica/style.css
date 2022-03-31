@@ -1,0 +1,14 @@
+body {
+    background-color: #232323;
+    color: #fff;
+}
+
+.paragrafo {
+    font-size: 1.6rem;
+}
+
+#container {
+    background-color: green;
+    color: #e2e0e0;
+    padding: 2rem;
+}
