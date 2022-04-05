@@ -1,0 +1,28 @@
+body {
+    margin: 0 17%;
+    background-color: #212121;
+    color: #e0e5e5;
+
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    color: #cccccca2;
+}
+
+img {
+    width: 25%;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.85rem;
+}
+
+a {
+    color: aqua;
+}
