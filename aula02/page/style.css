@@ -9,3 +9,7 @@ body {
 a {
     color: aqua;
 }
+
+figure {
+    text-align: center;
+}

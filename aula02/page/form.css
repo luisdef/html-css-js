@@ -28,6 +28,7 @@ button#sub {
 
 button#canc {
     background-color: #a72e26;
+    color: #fff;
 }
 
 button#sub:hover {
@@ -36,6 +37,6 @@ button#sub:hover {
 }
 
 button#canc:hover {
-    background-color: #3b0606;
-    color: #fff;
+    background-color: #f31717;
+    color: #111;
 }
