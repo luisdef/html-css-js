@@ -1,25 +1,43 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body,html{
+body, html {
     height: 100vh;
     margin: 0;
     padding: 0;
+
+    background-color: #ededed;
+    color: #2a2a2a;
+    font-family: sans-serif;
 }
 
-header,footer{
+header {
+    background-color: rgb(44, 60, 129);
     height: 50px;
-    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
 }
 
-main{
+footer {
+    background-color: rgb(44, 60, 129);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+main {
     /*Ocupa todo espaço disponível, tirando os 50px para o header e os 50px para o footer*/
     flex: 1;
     padding: 10px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;

@@ -16,7 +16,7 @@ html,body{
                        "nav  main"
                        "footer  footer";
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 2fr 7fr;
 }
 
 header{
