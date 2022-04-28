@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header,footer{
+    height: 50px;
+    background-color: blue;
+}
+
+main{
+    /*Ocupa todo espaço disponível, tirando os 50px para o header e os 50px para o footer*/
+    flex: 1;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
