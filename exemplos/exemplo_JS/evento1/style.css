@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+button{
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    font-size: 20px;
+    border-width: 0px;
+}
