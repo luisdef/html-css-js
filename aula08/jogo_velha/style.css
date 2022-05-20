@@ -36,13 +36,13 @@ h1 {
     padding: 2%;
     border-radius: 6px;
     background-color: #30abbb;
-    box-shadow: 0 0 1.2rem black;
+    box-shadow: 0 0 0.5rem black;
 
     transition: 0.6s;
 }
 
 .board:hover {
-    box-shadow: 0 0 0.5rem black;
+    box-shadow: 0 0 0.2rem black;
 }
 
 .board div {
@@ -57,5 +57,29 @@ h1 {
 
 .board div:hover {
     background-color: #ffffffaa;
-    border: 1px solid black;
+    border: 1px solid #000;
+}
+
+.ganhador {
+    display: none;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 6px;
+
+    margin-top: 1%;
+    padding: 1.2rem 2rem;
+
+    transition: 1s;
+}
+
+.ganhador button {
+    display: block;
+    border: none;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 0.6rem 0.7rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto";
 }

@@ -5,14 +5,17 @@ var tablado = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 localStorage.setItem("tablado", JSON.stringify(tablado));
 
 var btns = document.querySelectorAll(".box");
+var fim = 0;
 
 btns.forEach(function (btn) {
-
+    
     btn.addEventListener('click', function (e) {
 
         if (localStorage['qtde'] < 9 && e.target.innerHTML == "") {
 
-            if (localStorage['jogada']=="1") {
+            if (fim) {
+                return null;
+            } else if (localStorage['jogada']=="1") {
                 e.target.innerHTML = "X";
                 
                 localStorage['jogada']="2";
@@ -37,31 +40,7 @@ btns.forEach(function (btn) {
             }
 
             
-
             let tab_ver = JSON.parse(localStorage.getItem("tablado"));
-
-            // // X --------------------------------------------------------
-            // if (tab_ver[0] == "X"  && tab_ver[1] == "X" && tab_ver[2] == "X") {
-            //     console.log("x ganhou..");
-            // } else if (tab_ver[3] == "X"  && tab_ver[4] == "X" && tab_ver[5] == "X") {
-            //     console.log("x ganhou..");
-            // } else if (tab_ver[6] == "X"  && tab_ver[7] == "X" && tab_ver[8] == "X") {
-            //     console.log("x ganhou..");
-            // } else if (tab_ver[0] == "X"  && tab_ver[3] == "X" && tab_ver[6] == "X") {
-            //     console.log("x ganhou..");
-            // } else if (tab_ver[1] == "X"  && tab_ver[4] == "X" && tab_ver[7] == "X") {
-            //     console.log("x ganhou..");
-            // } else if (tab_ver[2] == "X"  && tab_ver[5] == "X" && tab_ver[8] == "X") {
-            //     console.log("x ganhou..");
-            // }
-
-            // else if (tab_ver[0] == "X"  && tab_ver[4] == "X" && tab_ver[8] == "X") {
-            //     console.log("x ganhou..");
-            // }
-
-            // else if (tab_ver[2] == "X"  && tab_ver[4] == "X" && tab_ver[6] == "X") {
-            //     console.log("x ganhou..");
-            // }
 
 
             // O --------------------------------------------------------
@@ -76,7 +55,9 @@ btns.forEach(function (btn) {
                 (tab_ver[2] == "O"  && tab_ver[4] == "O" && tab_ver[6] == "O")
             ) {
                 
-                document.querySelector('.ganhador').innerHTML = "Bolinha ganhou!!!"
+                document.querySelector('.ganhador').style.display = "block";
+                document.querySelector('.ganhador').innerHTML += "Bolinha ganhou!!!";
+                fim = 1;
 
             }
 
@@ -91,37 +72,25 @@ btns.forEach(function (btn) {
                 (tab_ver[0] == "X"  && tab_ver[4] == "X" && tab_ver[8] == "X") ||
                 (tab_ver[2] == "X"  && tab_ver[4] == "X" && tab_ver[6] == "X")
             ) {
-                
-                document.querySelector('.ganhador').innerHTML = "Xis ganhou!!!"
+                document.querySelector('.ganhador').style.display = "block";
+                document.querySelector('.ganhador').style.transform = "transform: translate(0, -3rem)";
+                document.querySelector('.ganhador').innerHTML += "Xis ganhou!!!";
+                fim = 1;
 
             }
-            
-            // else if (tab_ver[3] == "O"  && tab_ver[4] == "O" && tab_ver[5] == "O") {
-            //     console.log("O ganhou...");
-            // } else if (tab_ver[6] == "O"  && tab_ver[7] == "O" && tab_ver[8] == "O") {
-            //     console.log("O ganhou...");
-            // } else if (tab_ver[0] == "O"  && tab_ver[3] == "O" && tab_ver[6] == "O") {
-            //     console.log("O ganhou...");
-            // } else if (tab_ver[1] == "O"  && tab_ver[4] == "O" && tab_ver[7] == "O") {
-            //     console.log("O ganhou...");
-            // } else if (tab_ver[2] == "O"  && tab_ver[5] == "O" && tab_ver[8] == "O") {
-            //     console.log("O ganhou...");
-            // }
 
-            // else if (tab_ver[0] == "O"  && tab_ver[4] == "O" && tab_ver[8] == "O") {
-            //     console.log("O ganhou...");
-            // }
-
-            // else if (tab_ver[2] == "O"  && tab_ver[4] == "O" && tab_ver[6] == "O") {
-            //     console.log("x ganhou..");
-            // }
-
-        }
-
-        if (localStorage['qtde'] >= 9) {
-            document.querySelector('.ganhador').innerHTML = "Empate!"
+            if (localStorage['qtde'] == 9 && !fim) {
+                document.querySelector('.ganhador').style.display = "block";
+                document.querySelector('.ganhador').style.transform = "transform: translate(0, -3rem)";
+                document.querySelector('.ganhador').innerHTML += "Empate";
+                fim = 1;
+            }
         }
 
     });
 
 });
+
+function reload() {
+    window.location.reload();
+}
