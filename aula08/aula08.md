@@ -4,3 +4,5 @@
     - HTML;
     - CSS;
     - JavaScript.
+- Jogo da Velha;
+- HangMan (Jogo da velha);
