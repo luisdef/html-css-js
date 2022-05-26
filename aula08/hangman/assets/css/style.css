@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @font-face {
     font-family: 'Crackman';
-    src: url('crackman.regular.ttf');
+    src: url('../imgs/crackman.regular.ttf');
 }
 
 * {
@@ -21,6 +21,7 @@ html, body {
 }
 
 .container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +134,7 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
 }
+
 .score p {
     padding: 0 0.5rem;
 }

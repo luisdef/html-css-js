@@ -1,11 +1,16 @@
-localStorage['right'] = 0;
-localStorage['wrong'] = 0;
+const words = [
+    "carro",
+    "cachorro",
+    "careca"
+];
 
-const word = "carro";
+const random = Math.floor(Math.random() * words.length);
+const word = words[random];
+
 var letters = [];
 
 for (let i = 0; i < word.length; i++) {
-    letters[i] = word[i];    
+    letters[i] = word[i];
 }
 
 const space = document.querySelector('.word');
@@ -24,16 +29,8 @@ alphabet.forEach(function (ltr) {
 
         for (let i = 0; i < letters.length; i++) {
             if (clickedLetter == letters[i]) {
-                ltr.style.color = "#222";
-                ltr.style.backgroundColor = "#62f5a4";
                 wordSpaces[i].innerHTML = clickedLetter;
-                console.log(localStorage['right'])
-                localStorage['right'] = Number(localStorage['right']) + 1;
             }
         }
-
-        let right = localStorage['right'];
-        document.querySelector('#right').innerHTML = "";
-        document.querySelector('#right').innerHTML = right;
     });
 });
