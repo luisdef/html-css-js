@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+</head>
+<body>
+    <div id=""></div>
+    <script>
+        const url = "https://ghibliapi.herokuapp.com/films";
+        const body = document.querySelector('body');
+        
+        // A função fetch faz uso de uma Promise para operacionalizar o uso de uma API;
+        fetch(url)
+        .then(response => response.json())
+        .then(json => {
+            json.forEach(movie => {
+                console.log(movie.title);
+            })
+        })
+        .catch(error => console.log(error));
+
+    </script>
+</body>
+</html>
