@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Felipe Assmann | Conversor</title>
+    <link rel="shortcut icon" href="imgs/coin.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script async src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Conversão de moeda</h2>
+            <p>Selecione o ID das moedas as quais deseja converter nos dois campos abaixo. Logo após informe o valor que deseja converter.</p>
+            <span class="warn">* é usado o modelo de formatação de moeda dos EUA.</spans><br>
+
+            <!-- <input placeholder="id" type="text" name="to" id="to">
+            <span>para</span>
+            <input placeholder="id" type="text" name="from" id="from"> -->
+
+            <select name="from" id="from">
+                <option id="BTC" value="BTC">BTC</option>
+            </select>
+            <span> para </span>
+            <select name="to" id="to">
+                <option id="USD" value="USD">USD</option>
+            </select>
+            <br>
+            <input id="valor" type="number" placeholder="$0.00">
+            <button id="btn">Converter</button>
+            
+            <div class="result">
+                <span id="r">$0.00</span>
+            </div>
+
+            <span>Moedas suportados:</span>
+            <table>
+                <tr>
+                    <th>Moeda</th>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <td>Bitcoin</td>
+                    <td>BTC</td>
+            </table>
+
+            <footer>
+                <p>Desenvolvido por Luis Felipe Assmann</p>
+                <p>Dados da Free Currency API</p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../imgs/stocks.jpg');
+    background-size: 100%;
+
+}
+.container {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    background-color: #112231;
+    box-shadow: 0px 0px 10px #000;
+
+    color: #fff;
+    font-family: Roboto Slab, sans-serif;
+}
+.result span {
+    display: block;
+    background-color: #0e1924;
+    border-radius: 3px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+th {
+    background-color: #0e1924;
+}
+select {
+    font-family: Roboto Slab, sans-serif;
+    padding: 0.2rem 0.2rem;
+    margin-top: 1rem;
+    max-width: 140px;
+}
+
+input {
+    font-weight: bold;
+    font-family: Roboto Slab, sans-serif;
+    padding: 0.2rem 0.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    width: 4rem;
+}
+input#valor {
+    width: 9rem;
+}
+p {
+    margin: 1rem;
+    text-align: center;
+    max-width: 400px;
+}
+button {
+    font-weight: bold;
+    font-family: Roboto Slab, sans-serif;
+    padding: 0.2rem 0.2rem;
+}
+table {
+    margin-top: 0.5rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #fff;
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
