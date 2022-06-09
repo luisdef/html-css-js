@@ -13,8 +13,8 @@ body {
     justify-content: center;
     height: 100vh;
 }
-.container {
-    padding: 2.5rem;
+.container, footer {
+    padding: 1rem;
     width: 50%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 8px;
@@ -23,7 +23,7 @@ body {
     background: inherit;
     overflow: hidden;
 }
-.container:before {
+.container:before, footer:before {
     content: "";
     position: absolute;
     background: inherit;
@@ -45,6 +45,16 @@ body {
     padding-top: 1rem;
     font-family: Joan, sans-serif;
     text-align: right;
+}
+footer {
+    position: absolute;
+    opacity: 0.9;
+    bottom: 0.3rem;
+    width: 20rem;
+    padding: 0.3rem;
+    text-align: center;
+    font-family: Joan, sans-serif;
+    font-size: 0.8rem;
 }
 @media (max-width: 480px) {
     .container { width: 90%; }
