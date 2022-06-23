@@ -1,3 +1,8 @@
 <?php
 $name = $_POST["name"];
-echo "<h1>Seu nome é: $name, eu sei, essa informação é muito útil 😃</h1>";
+
+if ($name === "Luis") {
+  echo "<p>Que nome bacana, $name</p>";
+} else {
+  echo "<p>Seu nome é: $name</p>";
+}
