@@ -67,9 +67,3 @@ $a = 5;
 echo --$a."<br>";
 echo $a."<br>";
 ?>
-
-<?php
-$a = "oie";
-echo $a;
-echo ($a && $b);
-?>
