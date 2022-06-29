@@ -37,6 +37,13 @@ echo round(5.055, 2)."<br>";
 
 <h2>e)</h2>
 <?php
+$x = -10;
+$y = 10;
+echo abs($x)."<br>".abs($y);
+?>
+
+<h2>f)</h2>
+<?php
 $n = 2;
 $x = 3;
 $p = pow($n, $x);
@@ -45,7 +52,7 @@ $r = sqrt(9);
 echo $r."<br>";
 ?>
 
-<h2>f)</h2>
+<h2>g)</h2>
 <?php
 $min = 1;
 $max = 10;
