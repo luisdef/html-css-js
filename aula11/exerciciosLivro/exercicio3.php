@@ -1,4 +1,4 @@
-<h1>Exercício 2</h1>
+<h1>Exercício 3</h1>
 
 <h2>a)</h2>
 <?php
